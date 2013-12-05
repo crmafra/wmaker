@@ -102,7 +102,7 @@ static void createPanel(Panel * p)
 	WMScrollView *sv;
 	WMFrame *f;
 	WMUserDefaults *udb;
-	int i, state;
+	int i, state = 0;
 
 	panel->box = WMCreateBox(panel->parent);
 	WMSetViewExpandsToParent(WMWidgetView(panel->box), 2, 2, 2, 2);

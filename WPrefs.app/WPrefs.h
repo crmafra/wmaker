@@ -75,8 +75,7 @@ void AddSection(Panel *panel, const char *iconFile);
 
 char *LocateImage(const char *name);
 
-void SetButtonAlphaImage(WMScreen *scr, WMButton *bPtr, const char *file,
-                         const char *title1, const char *title2);
+void SetButtonAlphaImage(WMScreen *scr, WMButton *bPtr, const char *file);
 
 /* Loads `file' into `icon_normal'. If `icon_greyed' is not NULL,
  * combine `icon_normal' with some grey and then optionally with image
@@ -85,7 +84,7 @@ void SetButtonAlphaImage(WMScreen *scr, WMButton *bPtr, const char *file,
 void CreateImages(WMScreen *scr, RContext *rc, RImage *xis, const char *file,
 		WMPixmap **icon_normal, WMPixmap **icon_greyed);
 
-WMWindow *GetWindow(Panel *panel);
+WMWindow *GetWindow(void);
 
 /* manipulate the dictionary for the WindowMaker domain */
 
